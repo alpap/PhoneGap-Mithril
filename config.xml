@@ -93,7 +93,8 @@
     </platform>
    
     <access origin="http://127.0.0.1*"/>
-    <access origin=" http://api.icndb.com*"/>
+    <access origin=" http://api.icndb.com"/>
+    <allow-intent origin=" http://api.icndb.com/*"/>
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
