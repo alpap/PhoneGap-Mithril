@@ -3,9 +3,9 @@ var count = 0; // added a variable
 var Splash = {
 	view: function() {
 		return m('div', { class: 'menu' }, [
-			m('a', { class: 'button _round', href: '#!/click' }, '1 click demo'),
+			m('a', { class: 'button _round _xlarge', href: '#!/click' }, '1 click demo'),
 			m('br'),
-			m('a', { class: 'button _round', href: '#!/request' }, 'Joke'),
+			m('a', { class: 'button _round _xlarge', href: '#!/request' }, 'Joke'),
 		]);
 	},
 };
@@ -18,7 +18,7 @@ var Click = {
 			m(
 				'button',
 				{
-					class: 'button _round',
+					class: 'button _round _xlarge',
 					onclick: function() {
 						count++;
 					},
@@ -29,7 +29,7 @@ var Click = {
 			m(
 				'button',
 				{
-					class: 'button _round',
+					class: 'button _round _xlarge',
 					onclick: function() {
 						count--;
 					},
@@ -37,7 +37,7 @@ var Click = {
 				' decrement',
 			),
 			m('div', { class: 'bottom-menu' }, [
-				m('a', { class: 'button _round ', href: '#!/splash' }, 'back'),
+				m('a', { class: 'button _round _xlarge ', href: '#!/splash' }, 'back'),
 			]),
 		]);
 	},
@@ -85,9 +85,9 @@ var Request = {
 			m('div', { class: 'title' }, [m('h1', { class: 'p-top-e ' }, 'Chucks best jokes')]),
 			m(jokesComponent, { class: 'pushdown', list: jokes }),
 			m('div', { class: 'bottom-menu' }, [
-				m('button', { class: 'button _round mar-top', onclick: getJoke }, 'Get chuck joke'),
+				m('button', { class: 'button _round _xlarge mar-top', onclick: getJoke }, 'Get chuck joke'),
 				m('br'),
-				m('a', { class: 'button _round ', href: '#!/splash' }, 'back'),
+				m('a', { class: 'button _round _xlarge ', href: '#!/splash' }, 'back'),
 			]),
 		]);
 	},
